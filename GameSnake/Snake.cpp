@@ -124,19 +124,20 @@ void KhoiTao(SNAKE& snake, MOI& moi, int level, int thoiGanSleep) {
 	moi.td.y = 10;
 }
 
+// Hiển thị cái cổng ở góc dưới bên phải màn hình
 void HienThiCaiCong() {
 	for (int i = consoleHeight - 5; i < consoleHeight; i++) {
 		gotoxy(consoleWidth - 1, i);
-		putchar('*');
+		putchar(178);
 		gotoxy(consoleWidth - 2, i);
-		putchar('*');
+		putchar(178);
 	}
 	for (int i = consoleHeight - 5; i < consoleHeight; i++) {
 		if (i != consoleHeight -3) {
 			gotoxy(consoleWidth - 3, i);
-			putchar('*');
+			putchar(178);
 			gotoxy(consoleWidth - 4, i);
-			putchar('*');
+			putchar(178);
 		}
 	}
 }
